@@ -1,0 +1,68 @@
+{
+  "name": "react-form-fields",
+  "version": "1.0.0",
+  "description": "Rendering engine for all react form fields",
+  "main": "dist/index",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start-storybook -p 6006",
+    "prepare": "yarn build",
+    "build": "rimraf dist && babel src -d dist --ignore '*/.test.js'",
+    "release": "standard-version"
+  },
+  "keywords": [
+    "react",
+    "form",
+    "input",
+    "fields",
+    "component",
+    "container"
+  ],
+  "author": "Solomon Ayoola <ayoola.solomon89@gmail.com>",
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/addon-centered": "^5.0.11",
+    "@storybook/addon-notes": "^5.0.11",
+    "@storybook/addon-storysource": "^5.0.11",
+    "@storybook/react": "^5.0.11",
+    "babel-loader": "^8.0.6",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-react-app": "^4.0.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
+    "prettier": "1.17.1",
+    "rimraf": "^2.6.3",
+    "standard-version": "^6.0.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  },
+  "dependencies": {
+    "formik": "^1.5.7",
+    "styled-components": "^4.2.1"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  }
+}
