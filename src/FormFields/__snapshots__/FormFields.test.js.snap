@@ -1,0 +1,213 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormFields should render properly 1`] = `
+<FormFields
+  fields={
+    Array [
+      Object {
+        "component": [Function],
+        "name": "firstName",
+        "placeholder": "First Name",
+        "type": "text",
+      },
+      Object {
+        "component": [Function],
+        "name": "lastName",
+        "placeholder": "Last Name",
+        "type": "text",
+      },
+    ]
+  }
+>
+  <TextField
+    name="firstName"
+    placeholder="First Name"
+    type="text"
+  >
+    <styled.div>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bxivhb",
+              "isStatic": true,
+              "lastClassName": "WdVyl",
+              "rules": Array [
+                "
+  margin-bottom: 16px;
+
+  p {
+    margin: 0;
+    color: red;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bxivhb",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="sc-bxivhb WdVyl"
+        >
+          <styled.input
+            name="firstName"
+            placeholder="First Name"
+            type="text"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bwzfXH",
+                    "isStatic": true,
+                    "lastClassName": "llWBwP",
+                    "rules": Array [
+                      "
+  height: 30px;
+  font-size: 1em;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  width: 250px;
+  padding: 8px 15px;
+",
+                    ],
+                  },
+                  "displayName": "styled.input",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bwzfXH",
+                  "target": "input",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              name="firstName"
+              placeholder="First Name"
+              type="text"
+            >
+              <input
+                className="sc-bwzfXH llWBwP"
+                name="firstName"
+                placeholder="First Name"
+                type="text"
+              />
+            </StyledComponent>
+          </styled.input>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </TextField>
+  <TextField
+    name="lastName"
+    placeholder="Last Name"
+    type="text"
+  >
+    <styled.div>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bxivhb",
+              "isStatic": true,
+              "lastClassName": "WdVyl",
+              "rules": Array [
+                "
+  margin-bottom: 16px;
+
+  p {
+    margin: 0;
+    color: red;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bxivhb",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="sc-bxivhb WdVyl"
+        >
+          <styled.input
+            name="lastName"
+            placeholder="Last Name"
+            type="text"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bwzfXH",
+                    "isStatic": true,
+                    "lastClassName": "llWBwP",
+                    "rules": Array [
+                      "
+  height: 30px;
+  font-size: 1em;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  width: 250px;
+  padding: 8px 15px;
+",
+                    ],
+                  },
+                  "displayName": "styled.input",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bwzfXH",
+                  "target": "input",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              name="lastName"
+              placeholder="Last Name"
+              type="text"
+            >
+              <input
+                className="sc-bwzfXH llWBwP"
+                name="lastName"
+                placeholder="Last Name"
+                type="text"
+              />
+            </StyledComponent>
+          </styled.input>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </TextField>
+</FormFields>
+`;

@@ -25,6 +25,10 @@ const addPropsToFields = fields => {
 };
 
 const FormFields = ({ fields }) => {
+  if (fields === undefined) {
+    throw new Error('You are calling FormFields with an undefined fields.');
+  }
+
   const fieldsWithProps = addPropsToFields(fields);
 
   const renderFields = fieldsToBeRendered =>

@@ -10,11 +10,16 @@
     "package.json"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "start-storybook -p 6006",
     "prepare": "yarn build",
-    "build": "rimraf dist && babel src -d dist --ignore '*/.test.js'",
+    "build": "rimraf dist && babel src -d dist --ignore 'src/**/*.test.js','src/**/*.stories.js','src/examples' ",
     "release": "standard-version"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "keywords": [
     "react",
@@ -25,6 +30,14 @@
     "container"
   ],
   "author": "Solomon Ayoola <ayoola.solomon89@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayoola-solomon/react-form-fields.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ayoola-solomon/react-form-fields/issues"
+  },
+  "homepage": "https://github.com/ayoola-solomon/react-form-fields#readme",
   "peerDependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -41,6 +54,9 @@
     "@storybook/addon-storysource": "^5.0.11",
     "@storybook/react": "^5.0.11",
     "babel-loader": "^8.0.6",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.2",
+    "enzyme-to-json": "^3.3.5",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-config-react-app": "^4.0.1",
@@ -48,6 +64,7 @@
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-react-hooks": "^1.6.0",
     "husky": "^2.3.0",
+    "jest": "^24.8.0",
     "lint-staged": "^8.1.7",
     "prettier": "1.17.1",
     "rimraf": "^2.6.3",
@@ -60,7 +77,7 @@
     "styled-components": "^4.2.1"
   },
   "lint-staged": {
-    "**/*.{ts,tsx}": [
+    "**/*.{js}": [
       "prettier --single-quote --write",
       "git add"
     ]

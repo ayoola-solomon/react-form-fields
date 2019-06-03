@@ -49,6 +49,11 @@ var addPropsToFields = function addPropsToFields(fields) {
 
 var FormFields = function FormFields(_ref) {
   var fields = _ref.fields;
+
+  if (fields === undefined) {
+    throw new Error('You are calling FormFields with an undefined fields.');
+  }
+
   var fieldsWithProps = addPropsToFields(fields);
 
   var renderFields = function renderFields(fieldsToBeRendered) {

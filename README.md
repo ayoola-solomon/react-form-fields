@@ -21,7 +21,7 @@ yarn add react-form-fields
 
 ```js
 import React from 'react';
-import Form-Fields from 'react-form-fields';
+import FormFields from 'react-form-fields';
 
 const fields = [
   {

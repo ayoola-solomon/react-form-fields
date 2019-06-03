@@ -25,8 +25,6 @@ export const Container = styled.div`
   }
 `;
 
-export const Container1 = styled.div``;
-
 export const TextFieldContainer = styled.div`
   margin-bottom: 16px;
 
