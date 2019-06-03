@@ -1,8 +1,8 @@
-# React-Form-Fields
+# Form-Fields
 
-> React Form Fields rendering engine
+> Form Fields rendering engine
 
-React-Form-Fields is a component that easily lets you render form fields into rows and column which you can drop it into your existing project.
+Form-Fields is a component that easily lets you render form fields into rows and column which you can drop it into your existing project.
 
 It's a plug and play component that'll fit in your workflow if your using standalone React/Formik/Redux-Form.
 
@@ -16,12 +16,12 @@ Features include
 ## Installation and usage
 
 ```js
-yarn add react-form-fields
+yarn add form-fields
 ```
 
 ```js
 import React from 'react';
-import FormFields from 'react-form-fields';
+import FormFields from 'form-fields';
 
 const fields = [
   {
