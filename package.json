@@ -14,7 +14,8 @@
     "start": "start-storybook -p 6006",
     "prepare": "yarn build",
     "build": "rimraf dist && babel src -d dist --ignore 'src/**/*.test.js','src/**/*.stories.js','src/examples' ",
-    "release": "standard-version"
+    "release": "standard-version",
+    "commit": "npx git-cz"
   },
   "husky": {
     "hooks": {
@@ -54,6 +55,8 @@
     "@storybook/addon-storysource": "^5.0.11",
     "@storybook/react": "^5.0.11",
     "babel-loader": "^8.0.6",
+    "commitizen": "^3.1.1",
+    "cz-conventional-changelog": "^2.1.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.2",
     "enzyme-to-json": "^3.3.5",
@@ -81,5 +84,10 @@
       "prettier --single-quote --write",
       "git add"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
