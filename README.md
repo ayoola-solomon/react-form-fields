@@ -13,6 +13,8 @@ Features include
 - Rendering form fields conditionally
 - Rendering form fields in rows and columns
 
+Check out this [sandbox](https://codesandbox.io/embed/affectionate-wiles-iws63) example for more usage
+
 ## Installation and usage
 
 ```js
