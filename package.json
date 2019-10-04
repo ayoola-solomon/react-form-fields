@@ -1,6 +1,6 @@
 {
   "name": "form-fields-react",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Rendering engine for all react form fields",
   "main": "dist/index",
   "sideEffects": false,
