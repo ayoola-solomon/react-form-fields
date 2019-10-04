@@ -11,9 +11,8 @@
   ],
   "scripts": {
     "test": "jest",
-    "start": "start-storybook -p 6006",
     "prepare": "yarn build",
-    "build": "rimraf dist && babel src -d dist --ignore 'src/**/*.test.js','src/**/*.stories.js','src/examples' ",
+    "build": "rimraf dist && babel src -d dist --ignore 'src/**/*.test.js','src/examples' ",
     "release": "standard-version",
     "commit": "npx git-cz"
   },
@@ -49,11 +48,6 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
-    "@storybook/addon-actions": "^5.0.11",
-    "@storybook/addon-centered": "^5.0.11",
-    "@storybook/addon-notes": "^5.0.11",
-    "@storybook/addon-storysource": "^5.0.11",
-    "@storybook/react": "^5.0.11",
     "babel-loader": "^8.0.6",
     "commitizen": "^3.1.1",
     "cz-conventional-changelog": "^2.1.0",
@@ -75,10 +69,7 @@
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2"
   },
-  "dependencies": {
-    "formik": "^1.5.7",
-    "styled-components": "^4.2.1"
-  },
+  "dependencies": {},
   "lint-staged": {
     "**/*.{js}": [
       "prettier --single-quote --write",
